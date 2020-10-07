@@ -1,6 +1,3 @@
-
-# Mesoscale Modeling
-
 <div class="row">
   <div class="column">
     <img src="images/teaser-rope.png" alt="Rope" style="width:100%">
