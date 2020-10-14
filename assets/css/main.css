@@ -3324,3 +3324,16 @@ input, select, textarea {
 	text-align: center;
 	font-size: small;
 }
+
+code {
+	border: 1px solid gray;
+	padding: 10px;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: small;
+	display:block;
+	white-space:pre-wrap;
+}
+
+#bibtex {
+	cursor: pointer;
+}
