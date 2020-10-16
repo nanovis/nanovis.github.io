@@ -2182,8 +2182,8 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		margin-bottom: 5em;
-		padding: 5em;
+		margin-bottom: 1em;
+		padding: 1em;
 	}
 
 		.wrapper.style1 {
@@ -2234,7 +2234,7 @@ input, select, textarea {
 		.wrapper.style4 {
 			background: #fff;
 			color: inherit;
-			padding: 4em;
+			padding: 2em;
 		}
 
 /* Header */
@@ -2660,7 +2660,7 @@ input, select, textarea {
 
 			header.special {
 				padding-top: 5.5em;
-				margin-bottom: 4em;
+				margin-bottom: 1em;
 			}
 
 	}
@@ -2694,12 +2694,12 @@ input, select, textarea {
 		/* Wrapper */
 
 			.wrapper {
-				margin-bottom: 4em;
+				margin-bottom: 2em;
 				padding: 4em 3em;
 			}
 
 				.wrapper.style4 {
-					padding: 3em;
+					padding: 1em;
 				}
 
 		/* Header */
@@ -2780,7 +2780,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style4 {
-					padding: 2.5em;
+					padding: 1em;
 				}
 
 		/* Banner */
@@ -2902,7 +2902,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style4 {
-				padding-bottom: 3em;
+				padding-bottom: 1em;
 			}
 
 		/* Main */
@@ -3237,7 +3237,7 @@ input, select, textarea {
 
 				.wrapper.style4 {
 					background-size: 10em;
-					padding: 1.5em 1.5em 3em 1.5em;
+					padding: 1.5em 1.5em 1em 1.5em;
 				}
 
 		/* Banner */
@@ -3326,7 +3326,7 @@ input, select, textarea {
 }
 
 code {
-	border: 1px solid gray;
+	border: 0px solid gray;
 	padding: 10px;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: small;
@@ -3336,4 +3336,15 @@ code {
 
 #bibtex {
 	cursor: pointer;
+}
+
+.no-decorations {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
 }
