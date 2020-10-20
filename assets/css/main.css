@@ -2538,6 +2538,7 @@ input, select, textarea {
 				border-bottom: solid 2px;
 				margin: 0 0 2em 0;
 				padding: 3px 0 3px 0;
+				background: rgba(64, 64, 64, 0.5);
 			}
 
 				#banner .inner header h2 {
@@ -2555,6 +2556,7 @@ input, select, textarea {
 				margin: 0;
 				font-weight: bold;
 				/* text-transform: uppercase; */
+			background: rgba(64, 64, 64, 0.5);
 			}
 
 				#banner .inner p a {
@@ -2659,7 +2661,7 @@ input, select, textarea {
 		/* Section/Article */
 
 			header.special {
-				padding-top: 5.5em;
+				padding-top: 2.5em;
 				margin-bottom: 1em;
 			}
 
@@ -3347,4 +3349,8 @@ code {
 	color: inherit;
 	cursor: pointer;
 	text-decoration: none;
+}
+
+.short-intro {
+	text-align: left;
 }
