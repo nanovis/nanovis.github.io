@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nanovis Group</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Nanovis</a> - <a href="https://nanovis.kaust.edu.sa/"><span>KAUST Nanovisualization Research Group</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="index.html#main">Publications</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<h2><strong>Homomorphic-Encrypted Volume Rendering</strong></h2>
+					</header>
+
+					<!-- Content -->
+						<section id="pub_1" class="wrapper style4 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<div class="image fit">
+										<img src="./images/homomorphic-encrypted-2.png" />
+										<p class="fig-text">The approach consists of a computer that produces, encrypts, 
+											and sends volume data to a server, which then renders the data and sends the
+											result to a client. The client decrypts and visualizes the result. The text 
+											that belongs to encrypted data or processing is stated in red.</p>
+									</div>
+								</div>
+							</div>
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<header>
+										<h2>People</h2>
+										<p>
+											<a href="mailto:sebastian@mazza.at">Sebastian Mazza</a>, 
+											<a href="mailto:danielpatel.no@gmail.com">Daniel Patel</a>, 
+											<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ivan-viola">Ivan Viola</a>
+										</p>
+									</header>
+
+									<h2>Abstract</h2>
+									<p>Computationally demanding tasks are typically calculated in dedicated data centers, 
+										and real-time visualizations also follow this trend. Some rendering tasks, however, 
+										require the highest level of confidentiality so that no other party, besides the 
+										owner, can read or see the sensitive data. Here we present a direct volume rendering 
+										approach that performs volume rendering directly on encrypted volume data by using 
+										the homomorphic Paillier encryption algorithm. This approach ensures that the volume 
+										data and rendered image are uninterpretable to the rendering server. Our volume 
+										rendering pipeline introduces novel approaches for encrypted-data compositing, 
+										interpolation, and opacity modulation, as well as simple transfer function design,
+										 where each of these routines maintains the highest level of privacy. We present 
+										 performance and memory overhead analysis that is associated with our privacy-preserving 
+										 scheme. Our approach is open and secure by design, as opposed to secure through 
+										 obscurity. Owners of the data only have to keep their secure key confidential to 
+										 guarantee the privacy of their volume data and the rendered images. Our work is, to 
+										 our knowledge, the first privacy-preserving remote volume-rendering approach that 
+										 does not require that any server involved be trustworthy; even in cases when the 
+										 server is compromised, no sensitive data will be leaked to a foreign party.
+									</p>
+
+									<footer>
+										<h2>Publications</h2>
+										<p>
+											Authors' Names.  
+											<a href="https://ieeexplore.ieee.org/document/9222562">Homomorphic-Encrypted Volume Rendering</a>.
+											<em>IEEE Transactions on Visualization and Computer Graphics, 2020.</em>
+											<span id="bibtex" onclick="$('#bibtex-text').slideToggle(500)"><strong>[BibTeX]</strong></span>
+										<code id="bibtex-text" style="display: none;">@article{Mazza_2020,
+	author = {S. {Mazza} and D. {Patel} and I. {Viola}},
+	journal = {IEEE Transactions on Visualization and Computer Graphics}, 
+	title = {Homomorphic-Encrypted Volume Rendering}, 
+	year = {2020},
+	pages = {1-1},
+	doi = {10.1109/TVCG.2020.3030436}
+}</code>
+											<a class="no-decorations" href="https://arxiv.org/abs/2009.02122" target="blank"><strong>[arXiv]</strong></a>
+										</p>
+									</footer>
+
+								</div>
+							</div>
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://github.com/nanovis" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Nanovis</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
