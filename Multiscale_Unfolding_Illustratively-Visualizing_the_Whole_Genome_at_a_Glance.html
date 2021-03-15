@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nanovis Group</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Nanovis</a> - <a href="https://nanovis.kaust.edu.sa/"><span>KAUST Nanovisualization Research Group</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="index.html#main">Publications</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<h2><strong>Multiscale Unfolding: Illustratively Visualizing the Whole Genome at a Glance</strong></h2>
+					</header>
+
+					<!-- Content -->
+						<section id="pub_1" class="wrapper style4 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<div class="image fit">
+										<img src="./images/multiscale-unfold-2.png" />
+										<p  class="fig-text">Multiscale unfolding with continuous scale transitions of the 3D human 
+											genome, showing chromosomes, loci, fibers, nucleosomes, double helix, and flattened base 
+											pairs. Scales 1–4 are composed of details from the next-lower scale, and linearized based 
+											on the elements’ own positions.</p>
+									</div>
+								</div>
+							</div>
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<header>
+										<h2>Authors</h2>
+										<p>
+											<a href="https://aviz.fr/halladjian">Sarkis Halladjian</a>, 
+											<a href="https://www.cg.tuwien.ac.at/staff/DavidKou%C5%99il">David Kouril</a>, 
+											<a href="https://www.cg.tuwien.ac.at/staff/HaichaoMiao">Haichao Miao</a>, 
+											<a href="https://www.cg.tuwien.ac.at/staff/EduardGr%C3%B6ller">Eduard Groeller</a>, 
+											<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ivan-viola">Ivan Viola</a>, 
+											<a href="https://tobias.isenberg.cc/">Tobias Isenberg</a> 
+										</p>
+									</header>
+
+									<h2>Abstract</h2>
+									<p>We present Multiscale Unfolding, an interactive technique for illustratively visualizing 
+										multiple hierarchical scales of DNA in a single view, showing the genome at different scales 
+										and demonstrating how one scale spatially folds into the next. The DNA's extremely long 
+										sequential structurearranged differently on several distinct scale levelsis often lost in 
+										traditional 3D depictions, mainly due to its multiple levels of dense spatial packing and 
+										the resulting occlusion. Furthermore, interactive exploration of this complex structure is 
+										cumbersome, requiring visibility management like cut-aways. In contrast to existing 
+										temporally controlled multiscale data exploration, we allow viewers to always see and 
+										interact with any of the involved scales. For this purpose we separate the depiction into 
+										constant-scale and scale transition zones. Constant-scale zones maintain a single-scale 
+										representation, while still linearly unfolding the DNA. Inspired by illustration, scale 
+										transition zones connect adjacent constant-scale zones via level unfolding, scaling, and 
+										transparency. We thus represent the spatial structure of the whole DNA macro-molecule, 
+										maintain its local organizational characteristics, linearize its higher-level organization, 
+										and use spatially controlled, understandable interpolation between neighboring scales. We 
+										also contribute interaction techniques that provide viewers with a coarse-to-fine control 
+										for navigating within our all-scales-in-one-view representations and visual aids to 
+										illustrate the size differences. Overall, Multiscale Unfolding allows viewers to grasp the 
+										DNA's structural composition from chromosomes to the atoms, with increasing levels of 
+										"unfoldedness," and can be applied in data-driven illustration and communication.
+									</p>
+
+									<footer>
+										<h2>Publications</h2>
+										<p>
+											Sarkis Halladjian, David Kouril, Haichao Miao, Eduard Groeller, Ivan Viola, and Tobias Isenberg.
+											<a href="https://doi.org/10.1109/TVCG.2021.3065443">Multiscale Unfolding: Illustratively Visualizing the Whole Genome at a Glance</a>.
+											<em>IEEE Transactions on Visualization and Computer Graphics (TVCG), 2021.</em>
+											<span id="bibtex" onclick="$('#bibtex-text').slideToggle(500)"><strong>[BibTeX]</strong></span></p>
+										<code id="bibtex-text" style="display: none;">@article{Halladjian2021,
+	author = {Sarkis Halladjian and David Kouril and Haichao Miao and Eduard Groeller and Ivan Viola and Tobias Isenberg},
+	journal = {{IEEE} Transactions on Visualization and Computer Graphics (TVCG)"},
+	title = {Multiscale Unfolding: Illustratively Visualizing the Whole Genome at a Glance},
+	year = {2021},
+	doi = {10.1109/TVCG.2021.3065443}
+}</code>
+										</p>
+									</footer>
+
+								</div>
+							</div>
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://github.com/nanovis" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Nanovis</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
