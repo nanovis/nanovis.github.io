@@ -3354,3 +3354,16 @@ code {
 .short-intro {
 	text-align: left;
 }
+
+.resources-table {
+	width: 600px;
+	text-align: center;
+}
+
+.resources-table th {
+	border-bottom: 1px gray solid;
+}
+
+.resources-table td {
+	vertical-align: middle;
+}
