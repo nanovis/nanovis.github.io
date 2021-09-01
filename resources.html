@@ -21,98 +21,216 @@
 					<nav id="nav">
 						<ul>
 							<li>
-								<a href="index.html#main">Publications</a>
+								<a href="index.html">Publications</a>
 							</li>
 						</ul>
 					</nav>
 				</header>
 
-			<!-- Main -->
+			<!-- Applications -->
 				<article id="main">
 
 					<header class="special container">
 						<h2><strong>Resources</strong></h2>
+						<h3 id="Applications"><strong>Applications</strong></h3>
 					</header>
 
-					<!-- Content -->
-						<section id="pub_1" class="wrapper style4 container special-alt">
-							<!--div class="row gtr-50">
-								<div class="col-12 col-12-narrower">
-									<div class="image fit">
-										<img src="./images/multiscale-unfold-2.png" />
-										<p  class="fig-text">Multiscale unfolding with continuous scale transitions of the 3D human 
-											genome, showing chromosomes, loci, fibers, nucleosomes, double helix, and flattened base 
-											pairs. Scales 1–4 are composed of details from the next-lower scale, and linearized based 
-											on the elements’ own positions.</p>
-									</div>
-								</div>
-							</div-->
-							<div class="row gtr-50">
-								<div class="col-12 col-12-narrower">									
-									<h2>MesoCraft</h2>
-									<p>
-										Latest version of mesoscale modeling framework based on <a href="modeling_in_the_time_of_COVID_19.html">Modeling in the Time of COVID-19: Statistical and Rule-based Mesoscale Models</a> paper. 
-									</p>
-									<p>
-										<a href="download/MesoCraft_1.2.4.zip">Executable (v. 1.2.4)</a> 										
-									</p>
+					<!-- MesoCraft -->
+					<section id="pub_1" class="wrapper style4 container special-alt">
+						<div class="row gtr-50">
+							<div class="col-8 col-12-narrower">
 
-									<h2>Web Volume Rendering</h2>
-									<p>
-										TBD...
-									</p>
+								<header>
+									<h2><a href="MesoCraft.html">MesoCraft</a></h2>
+								</header>
+								<p>MesoCraft is a mesoscale modeling application for manual, procedural and
+									rule-based modeleing of mesoscame molecular models. The application is
+									based on research presented in <a href="modeling_in_the_time_of_COVID_19.html">
+									Modeling in the Time of COVID-19: Statistical and Rule-based Mesoscale Models</a>.</p>
+								<footer>
+									<ul class="buttons">
+										<li><a href="MesoCraft.html" class="button">More ...</a></li>
+									</ul>
+								</footer>
 
-									<h2>Hello WebGPU triangle</h2>
-									<p>
-										This sample combines several technologies. The goal was to have a C++ triangle rendering code using WebGPU that can be compiled both for desktop (using the Dawn library) and web (using WebAssembly and its WebGPU support).
-									</p>
-									<p>
-										<a href="download/WebRenderer (x64).zip">Executable (Desktop x64)</a><br />
-										<a href="download/WebRenderer (wasm).zip">Executable (WASM)</a> Tested with Chrome Canary 92.0.4496.0 with the --enable-unsafe-webgpu flag<br />
-										<a href="download/WebRenderer-main.zip">Source Code (zip archive)</a> 
-									</p>
-
-									<h2>OpenGL Holographic Remoting on HoloLens 2 triangle</h2>
-									<p>
-										This is a proof-of-concept of how to send rendering done in OpenGL using Holographic Remoting to HoloLens 2. It is based on OpenGL and DirectX shared resources. See the GitHub repository for more information.
-									</p>
-									<p>
-										<a href="download/OpenGLOnHoloLens2.zip">Executable</a><br/> 
-										<a href="https://github.com/nanovis/Opengl-on-Hololens2.git" target="_blank">Source Code (on GitHub)</a> 
-									</p>
-
-									<h2>Mesoscale models</h2>
-									<p>
-										In this section we want to present models that were created using MesoCraft modeling tool. They all come in the <a href="download/model-file-format.pdf" target="_blank">.model format</a>.
-									</p>
-									<p>
-										<table class="resources-table">
-											<tr>
-												<th>Preview</th>
-												<th>Model name</th>												
-												<th>Download</th>
-											</tr>
-											<tr>
-												<td><image height="80" src="images/model_sars_in_blood_small.jpg" /></td>
-												<td>SARS-Cov-2 in blood plasma</td>		
-												<td><a href="download/sars_cov2_v6_blood.zip">sars_cov2_v6_blood.zip</a></td>
-											</tr>
-											<tr>
-												<td><image height="80" src="images/model_sars_small.jpg" /></td>
-												<td>SARS-Cov-2</td>												
-												<td><a href="download/sars_cov2_v6.zip">sars-cov-2_v6.zip</a></td>
-											</tr>
-											<tr>
-												<td><image height="80" src="images/model_T4_small.jpg" /></td>
-												<td>T4</td>
-												<td><a href="download/T4_v3.zip">T4_v3.zip</a></td>
-											</tr>
-										</table>										
-									</p>
-
+							</div>
+							<div class="col-4 col-12-narrower imp-narrower">
+								<div class="image fit">
+									<img src="./images/mesocraft-screenshot.jpg" />
 								</div>
 							</div>
-						</section>
+						</div>
+					</section>
+
+				</article>
+
+			<!-- Code and Builds -->
+				<article id="main">
+
+					<header class="special container">
+						<h3 id="Code"><strong>Code and Builds</strong></h3>
+					</header>
+
+					<!-- WebGPU C++ -->
+					<section id="pub_1" class="wrapper style4 container special-alt">
+						<div class="row gtr-50">
+							<div class="col-8 col-12-narrower">
+
+								<header>
+									<h2><a href="WebGPU-Cpp-WASM.html">WebGPU C++ WASM - Hello triangle</a></h2>
+								</header>
+								<p>WebGPU demo application developed in C++. The application can run as a standalone application
+								(using the <a href="https://dawn.googlesource.com/dawn" target="_blank">Dawn library</a>) or
+								can be build into a WebAssambley web application which runs in the web browser.</p>
+								<footer>
+									<ul class="buttons">
+										<li><a href="WebGPU-Cpp-WASM.html" class="button">More ...</a></li>
+									</ul>
+								</footer>
+
+							</div>
+							<div class="col-4 col-12-narrower imp-narrower">
+								<div class="image fit">
+									<img src="./images/webrenderer-screenshot.jpg" />
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- WebGPU Rust -->
+					<section id="pub_1" class="wrapper style4 container special-alt">
+						<div class="row gtr-50">
+							<div class="col-8 col-12-narrower">
+
+								<header>
+									<h2><a href="WebGPU-Rust.html">WebGPU DVR in Rust</a></h2>
+								</header>
+								<p>Simple WebGPU direct volume rendering demo application developed in Rust.</p>
+								<footer>
+									<ul class="buttons">
+										<li><a href="WebGPU-Rust.html" class="button">More ...</a></li>
+									</ul>
+								</footer>
+
+							</div>
+							<div class="col-4 col-12-narrower imp-narrower">
+								<div class="image fit">
+									<img src="./images/wenderer-screenshot.jpg" />
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Holo Remoting -->
+					<section id="pub_1" class="wrapper style4 container special-alt">
+						<div class="row gtr-50">
+							<div class="col-8 col-12-narrower">
+
+								<header>
+									<h2><a href="Holographic-Remoting.html">OpenGL Holographic Remoting</a></h2>
+								</header>
+								<p>A proof of concept application demnostratin hot to send a rendering
+									done in OpenGL using Holographic Remoting to HoloLens 2. It is exploits
+									OpenGL and DirectX shared resources.
+								</p>
+								<footer>
+									<ul class="buttons">
+										<li><a href="Holographic-Remoting.html" class="button">More ...</a></li>
+									</ul>
+								</footer>
+
+							</div>
+							<div class="col-4 col-12-narrower imp-narrower">
+								<div class="image fit">
+									<img src="./images/holographic-remoting-screenshot.jpg" />
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</article>
+
+			<!-- Mesoscale Models -->
+				<article id="main">
+
+					<header class="special container">
+						<h3 id="Models"><strong>Mesoscale models</strong></h3>
+					</header>
+
+					<!-- SARS-CoV-2 in blood plasma -->
+					<section id="pub_1" class="wrapper style4 container special-alt">
+						<div class="row gtr-50">
+							<div class="col-8 col-12-narrower">
+
+								<header>
+									<h2><a href="SARS-CoV-2-model-in-blood-plasma.html">SARS-CoV-2 model in blood plasma</a></h2>
+								</header>
+								<p>A model of SARS-CoV-2 in blood plasma  created using MesoCraft modeling tool
+								in the <a href="./download/model-file-format.pdf">.model format</a>.</p>
+								<footer>
+									<ul class="buttons">
+										<li><a href="SARS-CoV-2-model-in-blood-plasma.html" class="button">More ...</a></li>
+									</ul>
+								</footer>
+
+							</div>
+							<div class="col-4 col-12-narrower imp-narrower">
+								<div class="image fit">
+									<img src="./images/model_sars_in_blood_small.jpg" />
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- SARS-CoV-2 -->
+					<section id="pub_1" class="wrapper style4 container special-alt">
+						<div class="row gtr-50">
+							<div class="col-8 col-12-narrower">
+
+								<header>
+									<h2><a href="SARS-CoV-2-model.html">SARS-CoV-2 model</a></h2>
+								</header>
+								<p>A model of SARS-CoV-2 created using MesoCraft modeling tool
+								in the <a href="./download/model-file-format.pdf">.model format</a>.</p>
+								<footer>
+									<ul class="buttons">
+										<li><a href="SARS-CoV-2-model.html" class="button">More ...</a></li>
+									</ul>
+								</footer>
+
+							</div>
+							<div class="col-4 col-12-narrower imp-narrower">
+								<div class="image fit">
+									<img src="./images/model_sars_small.jpg" />
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- T4 -->
+					<section id="pub_1" class="wrapper style4 container special-alt">
+						<div class="row gtr-50">
+							<div class="col-8 col-12-narrower">
+
+								<header>
+									<h2><a href="T4-model.html">T4 model</a></h2>
+								</header>
+								<p>A model of T4 bacteriophages created using MesoCraft modeling tool
+								in the <a href="./download/model-file-format.pdf">.model format</a>.</p>
+								<footer>
+									<ul class="buttons">
+										<li><a href="T4-model.html" class="button">More ...</a></li>
+									</ul>
+								</footer>
+
+							</div>
+							<div class="col-4 col-12-narrower imp-narrower">
+								<div class="image fit">
+									<img src="./images/model_T4_small.jpg" />
+								</div>
+							</div>
+						</div>
+					</section>
 
 				</article>
 
