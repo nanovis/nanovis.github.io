@@ -34,7 +34,7 @@
 				<article id="main">
 
 					<header class="special container">
-						<h2><strong>Finding Nano-{\"O}tzi: Cryo-Electron Tomography Visualization Guided by Learned Segmentation</strong></h2>
+						<h2><strong>Finding Nano-Ötzi: Cryo-Electron Tomography Visualization Guided by Learned Segmentation</strong></h2>
 					</header>
 
 					<!-- Content -->
@@ -42,7 +42,7 @@
 							<div class="row gtr-50">
 								<div class="col-12 col-12-narrower">
 									<div class="image fit">
-										<img src="./images/Nanotilus.png" />
+										<img src="./images/NanoOetzi-teaser.png" />
 										<p class="fig-text"></p>
 									</div>
 								</div>
@@ -64,17 +64,8 @@
 
 									<h2>Description</h2>
 									<p>
-										Cryo-electron tomography (cryo-ET) is a new 3D imaging technique with unprecedented potential for resolving submicron structural details. 
-										Existing volume visualization methods, however, are not able to reveal details of interest due to low signal-to-noise ratio.
-										In order to design more powerful transfer functions, we propose leveraging soft segmentation as an explicit component of visualization for noisy volumes.
-										Our technical realization is based on semi-supervised learning, where we combine the advantages of two segmentation algorithms. 
-										First, the weak segmentation algorithm provides good results for propagating sparse user-provided labels to other voxels in the same volume and is used to generate dense pseudo-labels.  
-										Second, the powerful deep-learning-based segmentation algorithm learns from these pseudo-labels to generalize the segmentation to other unseen volumes, a task that the weak segmentation algorithm fails at completely. 
-										The proposed volume visualization uses deep-learning-based segmentation as a component for segmentation-aware transfer function design.  
-										Appropriate ramp parameters can be suggested automatically through frequency distribution analysis. 
-										Furthermore, our visualization uses gradient-free ambient occlusion shading to further suppress the visual presence of noise, and to give structural detail the desired prominence.
-										The cryo-ET data studied in our technical experiments are based on the highest-quality tilted series of intact SARS-CoV-2 virions. 
-										Our technique shows the high impact in target sciences for visual data analysis of very noisy volumes that cannot be visualized with existing techniques.
+										Cryo-electron tomography (cryo-ET) is a new 3D imaging technique with unprecedented potential for resolving submicron structural details. Existing volume visualization methods, however, are not able to reveal details of interest due to low signal-to-noise ratio.
+										In order to design more powerful transfer functions, we propose leveraging soft segmentation as an explicit component of visualization for noisy volumes. Our technical realization is based on semi-supervised learning, where we combine the advantages of two segmentation algorithms. First, the weak segmentation algorithm provides good results for propagating sparse user-provided labels to other voxels in the same volume and is used to generate dense pseudo-labels. Second, the powerful deep-learning-based segmentation algorithm learns from these pseudo-labels to generalize the segmentation to other unseen volumes, a task that the weak segmentation algorithm fails at completely. The proposed volume visualization uses deep-learning-based segmentation as a component for segmentation-aware transfer function design. Appropriate ramp parameters can be suggested automatically through frequency distribution analysis.Furthermore, our visualization uses gradient-free ambient occlusion shading to further suppress the visual presence of noise, and to give structural detail the desired prominence. The cryo-ET data studied in our technical experiments are based on the highest-quality tilted series of intact SARS-CoV-2 virions. Our technique shows the high impact in target sciences for visual data analysis of very noisy volumes that cannot be visualized with existing techniques.
 									</p>
 
 									<h2>Sources</h2>
@@ -96,14 +87,13 @@
 											<!--<a class="no-decorations" href="https://repository.kaust.edu.sa/handle/10754/665899" target="blank"><strong>[KAUST]</strong></a>-->
 											<span id="bibtex" onclick="$('#bibtex-text').slideToggle(500)"><strong>[BibTeX]</strong></span>
 										</p>
-										<code id="bibtex-text" style="display: none;">@article{9806341,
-											<br />
-											author={Nguyen, Ngan and Bohak, Ciril and Engel, Dominik and Mindek, Peter and Strnad, Ondřej and Wonka, Peter and Li, Sai and Ropinski, Timo and Viola, Ivan},
-											<br />journal={IEEE Transactions on Visualization and Computer Graphics},
-											<br />title={Finding Nano-Ötzi: Cryo-Electron Tomography Visualization Guided by Learned Segmentation},
-											<br />year={2022},<!--<br />volume={},<br />number={},<br />pages={1-1}, -->
-											<br />doi={10.1109/TVCG.2022.3186146}}
-										</code>
+										<code id="bibtex-text" style="display: none;">@article{Ngan_2022,
+	author={Nguyen, Ngan and Bohak, Ciril and Engel, Dominik and Mindek, Peter and Strnad, Ondřej and Wonka, Peter and Li, Sai and Ropinski, Timo and Viola, Ivan},
+	journal={IEEE Transactions on Visualization and Computer Graphics},
+	title={Finding Nano-Ötzi: Cryo-Electron Tomography Visualization Guided by Learned Segmentation},
+	year={2022},
+	doi={10.1109/TVCG.2022.3186146}
+}</code>
 										</p>
 									</footer>
 
