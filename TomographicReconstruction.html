@@ -1,0 +1,133 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nanovis Group</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Nanovis</a> - <a href="https://nanovis.kaust.edu.sa/"><span>KAUST Nanovisualization Research Group</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="index.html">Publications</a>
+							</li>
+							<li>
+								<a href="resources.html">Resources</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<h2><strong>GPU Accelerated 3D Tomographic Reconstruction and Visualization from Noisy Electron Microscopy Tilt-Series</strong></h2>
+					</header>
+
+					<!-- Content -->
+						<section id="pub_1" class="wrapper style4 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<div class="image fit">
+										<img src="./images/TomographicReconstruction_progression_2d_3d.png" />
+										<p class="fig-text"></p>
+									</div>
+								</div>
+							</div>
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<header>
+										<h2>Authors</h2>
+										<a href="https://cemse.kaust.edu.sa/cs/people/person/julio-rey-ramirez">Julio Rey Ramirez</a>,
+										<a href="https://cemse.kaust.edu.sa/people/person/peter-rautek">Peter Rautek</a>,
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ciril-bohak-0">Ciril Bohak</a>,
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ondrej-strnad">Ondrej Strnad</a>,
+										<a href="">Zheyuan Zhang</a>,										
+										<a href="https://life.tsinghua.edu.cn/lifeen/info/1033/1099.htm">Sai Li</a>,										
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ivan-viola">Ivan Viola</a>,
+										<a href="https://www.kaust.edu.sa/en/study/faculty/wolfgang-heidrich">Wolfgang Heidrich</a>
+									</header>
+
+									<h2>Description</h2>
+									<p>
+										We present a novel framework for 3D tomographic reconstruction and visualization of tomograms from noisy electron
+										microscopy tilt-series. Our technique takes as an input aligned tilt-series from cryogenic electron microscopy and creates denoised 3D
+										tomograms using a proximal jointly-optimized approach that iteratively performs reconstruction and denoising, relieving the users of the
+										need to select appropriate denoising algorithms in the pre-reconstruction or post-reconstruction steps. The whole process is
+										accelerated by exploiting parallelism on modern GPUs, and the results can be visualized immediately after the reconstruction using
+										volume rendering tools incorporated in the framework. We show that our technique can be used with multiple combinations of
+										reconstruction algorithms and regularizers, thanks to the flexibility provided by proximal algorithms. Additionally, the reconstruction
+										framework is open-source and can be easily extended with additional reconstruction and denoising methods. Furthermore, our
+										approach enables visualization of reconstruction error throughout the iterative process within the reconstructed tomogram and on
+										projection planes of the input tilt-series. We evaluate our approach in comparison with state-of-the-art approaches and additionally
+										show how our error visualization can be used for reconstruction evaluation.
+									</p>
+
+									<h2>Sources</h2>
+									<ul>
+										<li><a href="">TBD: GitHub repository</a></li>										
+									</ul>
+									<p>
+
+									</p>
+
+									<footer>
+										<h2>Publications</h2>
+										<p>
+											Julio Rey Ramirez, Peter Rautek, Ciril Bohak, Ondrej Strnad, Zheyuan Zhang, Sai Li, Ivan Viola, Wolfgang Heidrich.											
+											<a href="https://ieeexplore.ieee.org/document/9992117">GPU Accelerated 3D Tomographic Reconstruction and Visualization from Noisy Electron Microscopy Tilt-Series</a>.
+											<em>IEEE Transactions on Visualization and Computer Graphics (TVCG), 2022.</em>											
+											<span id="bibtex" onclick="$('#bibtex-text').slideToggle(500)"><strong>[BibTeX]</strong></span>
+										</p>
+										<code id="bibtex-text" style="display: none;">@article{9992117,<br />author={Ramirez, Julio Rey and Rautek, Peter and Bohak, Ciril and Strnad, Ondřej and Zhang, Zheyuan and Li, Sai and Viola, Ivan and Heidrich, Wolfgang},<br />journal={IEEE Transactions on Visualization and Computer Graphics},<br />title={GPU Accelerated 3D Tomographic Reconstruction and Visualization from Noisy Electron Microscopy Tilt-Series},<br />year={2022},<!--<br />volume={},<br />number={},<br />pages={1-1}, --><br />doi={10.1109/TVCG.2022.3230445}}
+										</code>
+										</p>
+									</footer>
+
+								</div>
+							</div>
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://github.com/nanovis" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/nanovis_group" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Nanovis</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
