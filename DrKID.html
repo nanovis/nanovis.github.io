@@ -1,0 +1,130 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nanovis Group</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Nanovis</a> - <a href="https://nanovis.kaust.edu.sa/"><span>KAUST Nanovisualization Research Group</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="index.html">Publications</a>
+							</li>
+							<li>
+								<a href="resources.html">Resources</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<h2><strong>Dr. KID: Direct Remeshing and K-set Isometric Decomposition for Scalable Physicalization of Organic Shapes</strong></h2>
+					</header>
+
+					<!-- Content -->
+						<section id="pub_1" class="wrapper style4 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<div class="image fit">
+										<img src="./images/DrKID.jpg" />
+										<p class="fig-text"></p>
+									</div>
+								</div>
+							</div>
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<header>
+										<h2>Authors</h2>
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/dawar-khan">Dawar Khan</a>, 
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ciril-bohak-0">Ciril Bohak</a>, 					
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ivan-viola">Ivan Viola</a>
+									</header>
+
+									<h2>Description</h2>
+									<p>
+										Dr. KID is an algorithm that uses isometric decomposition for the physicalization of potato-shaped organic models in a puzzle fashion. 
+										The algorithm begins with creating a simple, regular triangular surface mesh of organic shapes, followed by iterative k-means clustering and remeshing.
+										 For clustering, we need similarity between triangles (segments) which is defined as a distance function. The distance function maps each triangle's shape 
+										 to a single point in the virtual 3D space. Thus, the distance between the triangles indicates their degree of dissimilarity. K-means clustering uses this 
+										 distance and sorts of segments into k classes. After this, remeshing is applied to minimize the distance between triangles within the same cluster by making their 
+										 shapes identical. Clustering and remeshing are repeated until the distance between triangles in the same cluster reaches an acceptable threshold. We adopt a curvature-aware 
+										 strategy to determine the surface thickness and finalize puzzle pieces for 3D printing. Identical hinges and holes are created for assembling the puzzle components. For smoother outcomes,
+										  we use triangle subdivision along with curvature-aware clustering, generating curved triangular patches for 3D printing. Our algorithm was evaluated using various models, 
+										and the 3D-printed results were analyzed. Findings indicate that our algorithm performs reliably on target organic shapes with minimal loss of input geometry.
+									</p>
+
+									<h2>Sources</h2>
+									<ul>
+										<li><a href="https://github.com/juareyra/Proximal_CryoET">GitHub repository</a></li>										
+									</ul>
+									<p>
+
+									</p>
+
+									<footer>
+										<h2>Publications</h2>
+										<p>
+											Dawar Khan, Ciril Bohak, Ivan Viola.											
+											<a href="https://ieeexplore.ieee.org/document/10290929">Dr. KID: Direct Remeshing and K-set Isometric Decomposition for Scalable Physicalization of Organic Shapes</a>.
+											<em style="color: rgba(238, 9, 82, 0.507);"><strong> (IEEE VIS2023 Honorable Mention)</strong></em>	
+											<em>, IEEE Transactions on Visualization and Computer Graphics (TVCG), 2023.</em>	
+											<a href="https://www.youtube.com/watch?v=1MByeDBLgK0&t=3s"><strong>[Video Demo]</strong></a>										
+											<span id="bibtex" onclick="$('#bibtex-text').slideToggle(500)"><strong>[BibTeX]</strong></span>
+										</p>
+										<code id="bibtex-text" style="display: none;">@article{10290929,<br />author={Khan, Dawar and Bohak, Ciril and Viola, Ivan},<br />journal={IEEE Transactions on Visualization and Computer Graphics}
+											<br />title={Dr. KID: Direct Remeshing and K-set Isometric Decomposition for Scalable Physicalization of Organic Shapes},<br />year={2023},<!--<br />volume={},<br />number={},<br />pages={1-1}, -->
+											<br />doi={10.1109/TVCG.2023.3326595}}
+										</code>
+										</p>
+									</footer>
+
+								</div>
+							</div>
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://github.com/nanovis" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/nanovis_group" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Nanovis</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
