@@ -1,0 +1,135 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nanovis Group</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Nanovis</a> - <a href="https://nanovis.kaust.edu.sa/"><span>KAUST Nanovisualization Research Group</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="index.html">Publications</a>
+							</li>
+							<li>
+								<a href="resources.html">Resources</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<h2><strong>DiffFit: Visually-Guided Differentiable Fitting of Molecule Structures to Cryo-EM Map</strong></h2>
+					</header>
+
+					<!-- Content -->
+						<section id="pub_1" class="wrapper style4 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<div class="image fit">
+										<img src="./images/DiffFit.jpg" />
+										<p class="fig-text"></p>
+									</div>
+								</div>
+							</div>
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<header>
+										<h2>Authors</h2>
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/deng-luo">Deng Luo</a>, 
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/zainab-alsuwaykit">Zainab Alsuwaykit</a>, 
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/dawar-khan">Dawar Khan</a>, 					
+										<a href="https://cemse.kaust.edu.sa/cs/people/person/ondrej-strnad">Ondřej Strnad</a>, 					
+										<a href=" https://tobias.isenberg.cc/">Tobias Isenberg</a>, 					
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ivan-viola">Ivan Viola</a>
+									</header>
+
+									<h2>Description</h2>
+									<p>
+										We introduce DiffFit, a differentiable algorithm for fitting protein atomistic structures into 
+										experimental reconstructed Cryo-Electron Microscopy (cryo-EM) volume map. This process is essential 
+										in structural biology to semi-automatically reconstruct large meso-scale models of complex protein 
+										assemblies and complete cellular structures that are based on measured cryo-EM data. Current approaches
+										 require manual fitting in 3D that already results in approximately aligned structures followed by an automated 
+										 fine-tuning of the alignment. With our DiffFit approach, we enable domain scientists to automatically fit new structures 
+										 and visualize the fitting results for inspection and interactive revision. Our fitting begins with differentiable 3D rigid
+										  transformations of the protein atom coordinates, followed by sampling the density values at its atom coordinates from the target
+										   cryo-EM volume. To ensure a meaningful correlation between the sampled densities and the protein structure, we propose a novel loss 
+										   function based on a multi-resolution volume-array approach and the exploitation of the negative space. Such loss function serves as a
+										    critical metric for assessing the fitting quality, ensuring both fitting accuracy and improved visualization of the results. We assessed
+											 the placement quality of DiffFit with several large, realistic datasets and found its quality to be superior to that of previous methods. We further evaluated
+											  our method in two use cases. First, we demonstrate its use in the process of automating the integration of known composite structures into larger protein complexes. 
+											  Second, we show that it facilitates the fitting of predicted protein domains into volume densities to aid researchers in the identification of unknown proteins. 
+											  We open-sourced (<a href="github.com/nanovis/DiffFitViewer">github.com/nanovis/DiffFitViewer</a>) DiffFit as a plugin in ChimeraX.
+										 All supplemental materials are available at <a href="osf.io/5tx4q">osf.io/5tx4q</a>.
+									</p>
+
+									<h2>Sources</h2> 
+
+									<footer>
+										<h2>Publications</h2>
+										<p>
+											Deng Luo, Zainab Alsuwaykit, Dawar Khan, Ondřej Strnad, Tobias Isenberg, Ivan Viola											
+											<a href="https://arxiv.org/abs/2404.02465v2">DiffFit: Visually-Guided Differentiable Fitting of Molecule Structures to Cryo-EM Map</a>. 
+											<em>, arXiv preprint, 2024.</em>											
+											<span id="bibtex" onclick="$('#bibtex-text').slideToggle(500)"><strong>[BibTeX]</strong></span>
+										</p>
+										<code id="bibtex-text" style="display: none;">@article{DiffFIt10290929,<br />author={Luo, Deng and Alsuwaykit, Zainab  and Khan, Dawar and  Strnad, Ondřej and  Isenberg, Tobias and Viola, Ivan},
+									
+											<br />title={DiffFit: Visually-Guided Differentiable Fitting of Molecule Structures to Cryo-EM Map},<br />year={2024},<br />doi={ 10.48550/arXiv.2404.02465}, 
+											<br />eprint={2404.02465},
+											<br />archivePrefix={arXiv},
+											<br />primaryClass={q-bio.QM} <br />}</code>
+										 
+										</p>
+									</footer>
+
+								</div>
+							</div>
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://github.com/nanovis" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/nanovis_group" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Nanovis</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
