@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nanovis Group</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Nanovis</a> - <a href="https://nanovis.kaust.edu.sa/"><span>KAUST Nanovisualization Research Group</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="index.html">Publications</a>
+							</li>
+							<li>
+								<a href="resources.html">Resources</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<h2><strong>Nanouniverse: Virtual Instancing of Structural Detail and Adaptive Shell Mapping</strong></h2>
+					</header>
+
+					<!-- Content -->
+						<section id="pub_1" class="wrapper style4 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<div class="image fit">
+										<img src="./images/Nanouniverse.png" />
+										<p class="fig-text"></p>
+									</div>
+								</div>
+							</div>
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<header>
+										<h2>Authors</h2>
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ruwaydah-alharbi">Ruwayda Alharbi</a>, 		
+										<a href="https://cemse.kaust.edu.sa/cs/people/person/ondrej-strnad">Ondřej Strnad</a>, 					
+										<a href="https://cemse.kaust.edu.sa/people/person/markus-hadwiger">Markus Hadwiger</a>, 					
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ivan-viola">Ivan Viola</a>
+									</header>
+
+									<h2>Description</h2>
+									<p>
+										Rendering huge biological scenes with atomistic detail presents a significant challenge in molecular visualization due to the memory 
+										limitations inherent in traditional rendering approaches. In this paper, we propose a novel method for the interactive rendering of 
+										massive molecular scenes based on hardware-accelerated ray tracing. Our approach circumvents GPU memory constraints by introducing 
+										virtual instantiation of full-detail scene elements. Using instancing significantly reduces memory consumption while preserving the 
+										full atomistic detail of scenes comprising trillions of atoms, with interactive rendering performance and completely free user 
+										exploration. We utilize coarse meshes as proxy geometries to approximate the overall shape of biological compartments, and access 
+										all atomistic detail dynamically during ray tracing. We do this via a novel adaptive technique utilizing a volumetric shell layer 
+										of prisms extruded around proxy geometry triangles, and a virtual volume grid for the interior of each compartment. Our algorithm 
+										scales to enormous molecular scenes with minimal memory consumption and the potential to accommodate even larger scenes. Our method 
+										also supports advanced effects such as clipping planes and animations. We demonstrate the efficiency and scalability of our approach
+										by rendering tens of instances of Red Blood Cell and SARS-CoV-2 models theoretically containing more than 20 trillion atoms.
+
+									</p>
+
+									<!--<h2>Sources</h2>
+									<ul>
+										<li><a href="download/Nanotilus/Nanotilus_Submission_Video.mp4">Video - Nanotilus framework</a></li>
+										<li><a href="download/Nanotilus/Nanotilus_Sample_tour_SARS-COV-2_model.mp4">Video - Sample A ( SARS-COV-2 in blood plasma dataset)</a></li>
+										<li><a href="download/Nanotilus/Nanotilus_Sample_tour_HIV_model.mp4">Video - Sample B ( HIV in blood plasma dataset)</a></li>
+									</ul>-->
+									<p>
+
+									</p>
+
+									<footer>
+										<h2>Publications</h2>
+										<p>
+											Ruwayda Alharbi, Ondřej Strnad, Markus Hadwiger and Ivan Viola.
+											<a href="https://arxiv.org/abs/2404.05116">Nanouniverse: Virtual Instancing of Structural Detail and Adaptive Shell Mapping</a>.
+											<em>arXiv preprint, 2024.</em>
+											<!--<a class="no-decorations" href="https://repository.kaust.edu.sa/handle/10754/665899" target="blank"><strong>[KAUST]</strong></a>-->
+											<span id="bibtex" onclick="$('#bibtex-text').slideToggle(500)"><strong>[BibTeX]</strong></span>
+										</p>
+										<code id="bibtex-text" style="display: none;">@misc{alharbi2024nanouniverse,
+											<br />author={Ruwayda Alharbi and Ondřej Strnad and Markus Hadwiger and Ivan Viola},
+											<br />title={Nanouniverse: Virtual Instancing of Structural Detail and Adaptive Shell Mapping},
+											<br />year={2024},
+											<br />eprint={2404.05116},
+											<br />archivePrefix={arXiv},
+											<br />primaryClass={cs.GR}}
+										</code>
+										</p>
+									</footer>
+
+								</div>
+							</div>
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://github.com/nanovis" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/nanovis_group" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Nanovis</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
