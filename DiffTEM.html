@@ -1,0 +1,127 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nanovis Group</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Nanovis</a> - <a href="https://nanovis.kaust.edu.sa/"><span>KAUST Nanovisualization Research Group</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="index.html">Publications</a>
+							</li>
+							<li>
+								<a href="resources.html">Resources</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<h2><strong>Towards Differentiable Electron Microscopy Simulation: Methods and Applications</strong></h2>
+					</header>
+
+					<!-- Content -->
+						<section id="pub_1" class="wrapper style4 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<div class="image fit">
+										<img src="./images/DiffTEM-teaser.png" />
+										<p class="fig-text"></p>
+									</div>
+								</div>
+							</div>
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<header>
+										<h2>Authors</h2>
+										<a href="https://cemse.kaust.edu.sa/people/person/ngan-nguyen">Ngan Nguyen</a>,
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/feng-liang">Feng Liang</a>,
+										<a href="https://www.uni-ulm.de/en/in/mi/institute/staff/dominik-engel/">Dominik Engel</a>,
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ciril-bohak-0">Ciril Bohak</a>,
+										<a href="https://cemse.kaust.edu.sa/cs/people/person/ondrej-strnad">Ondřej Strnad</a>,
+										<a href="https://www.uni-ulm.de/en/in/mi/institute/staff/timo-ropinski/">Timo Ropinski</a>,
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ivan-viola">Ivan Viola</a>
+									</header>
+
+									<h2>Description</h2>
+									<p>
+									We propose a new microscopy simulation system that can depict atomistic models in a micrograph visual style, similar to physical electron microscopy imaging results. This system is scalable, able to represent the simulation of electron microscopy of twenty complex viral particles, and synthesizes the image faster than previous approaches. Additionally, the simulator is differentiable in the deterministic and stochastic stages that form signal and noise representations in the micrograph. This allows for solving inverse problems by means of optimization and thus allows for the generation of microscopy simulations using parameter settings estimated from real data. We demonstrate this capability through two applications: (1) estimating the parameters of the modulation transfer function defining the detector properties of the simulated and real micrographs and (2) denoising the real data based on parameters optimized from the simulated examples using gradient descent. While current simulators do not support any parameter estimation due to their forward-only design, we show that the results obtained using estimated parameters are very similar to real micrographs. Additionally, we evaluate the denoising capabilities of our approach and show that the results are competitive with state-of-the-art methods. Denoised micrographs exhibit less noise in the tomographic reconstruction of tilt-series, facilitating visualization of microscopy tomography using direct volume rendering by reducing the visual dominance of noise.
+									</p>
+
+									<h2>Sources</h2>
+									<ul>
+										<li><a href="https://github.com/nanovis/diff-tem-release">Github repository contains code for simulation and running experiments presented in the paper</a></li>
+									</ul>
+									<p>
+
+									</p>
+
+									<footer>
+										<h2>Publications</h2>
+										<p>
+											Ngan Nguyen, Feng Liang, Dominik Engel, Ciril Bohak, Ondřej Strnad, Timo Ropinski, Ivan Viola.
+											<a href="https://ieeexplore.ieee.org/document/9806341">Towards Differentiable Electron Microscopy Simulation: Methods and Applications</a>.
+											<em>IEEE Pacific Visualization Symposium, 2024.</em>
+											<span id="bibtex" onclick="$('#bibtex-text').slideToggle(500)"><strong>[BibTeX]</strong></span>
+										</p>
+										<code id="bibtex-text" style="display: none;">@article{Ngan_2024,
+	author={Nguyen, Ngan and Liang, Feng and Engel, Dominik and Bohak, Ciril and Wonka, Peter and Ropinski, Timo and Viola, Ivan},
+	booktitle={2024 IEEE 16th Pacific Visualization Symposium (PacificVis)},
+	title={Towards Differentiable Electron Microscopy Simulation: Methods and Applications},
+	year={2024},
+	doi={10.1109/PacificVis60374.2024.00016}
+}</code>
+										</p>
+									</footer>
+
+								</div>
+							</div>
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://github.com/nanovis" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/nanovis_group" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Nanovis</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
