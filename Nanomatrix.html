@@ -1,0 +1,124 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nanovis Group</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Nanovis</a> - <a href="https://nanovis.kaust.edu.sa/"><span>KAUST Nanovisualization Research Group</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="index.html">Publications</a>
+							</li>
+							<li>
+								<a href="resources.html">Resources</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<h2><strong>Nanomatrix: Scalable Construction of Crowded Biological Environments</strong></h2>
+					</header>
+
+					<!-- Content -->
+						<section id="pub_1" class="wrapper style4 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<div class="image fit">
+										<img src="./images/Nanomatrix-result_02.png" />
+										<p class="fig-text"></p>
+									</div>
+								</div>
+							</div>
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<header>
+										<h2>Authors</h2>
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ruwaydah-alharbi">Ruwayda Alharbi</a>,
+										<a href="https://cemse.kaust.edu.sa/cs/people/person/ondrej-strnad">Ondřej Strnad</a>,
+										<a href="https://www.cg.tuwien.ac.at/staff/TobiasKlein">Tobias Klein</a>,
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ivan-viola">Ivan Viola</a>
+									</header>
+
+									<h2>Description</h2>
+									<p>
+										We present a novel method for the interactive construction and rendering of extremely large molecular scenes, capable of representing multiple biological cells in atomistic detail. Our method is tailored for scenes, which are procedurally constructed, based on a given set of building rules. Rendering of large scenes normally requires the entire scene available in-core, or alternatively, it requires out-of-core management to load data into the memory hierarchy as a part of the rendering loop.
+										Instead of out-of-core memory management, we propose to procedurally generate the scene on-demand on the fly. The key idea is a positional- and view-dependent procedural scene-construction strategy, where only a fraction of the atomistic scene around the camera is available in the GPU memory at any given time. The atomistic detail is populated into a uniform-space partitioning using a grid that covers the entire scene. Most of the grid cells are not filled with geometry, only those are populated that are potentially seen by the camera. The atomistic detail is populated in a compute shader and its representation is connected with acceleration data structures for hardware ray-tracing of modern GPUs.
+										Objects which are far away, where atomistic detail is not perceivable from a given viewpoint, are represented by a triangle mesh mapped with a seamless texture, generated from the rendering of geometry from atomistic detail. The algorithm consists of two pipelines, the construction-compute pipeline, and the rendering pipeline, which work together to render molecular scenes at an atomistic resolution far beyond the limit of the GPU memory containing trillions of atoms. We demonstrate our technique on multiple models of SARS-CoV-2 and the red blood cell.
+									</p>
+
+									<!--<h2>Sources</h2>
+	<ul>
+		<li><a href="download/Nanomatrix/Nanomatrix_Submission_Video.zip">Video - Nanomatrix framework</a></li>
+		<li><a href="download/Nanomatrix/Nanomatrix_flythrough.zip">Video - Nanomatrix flythrough</a></li>
+	</ul>
+	<p>
+
+	</p> -->
+
+									<footer>
+										<h2>Publications</h2>
+										<p>
+											Ruwayda Alharbi, Ondřej Strnad, Tobias Klein, Ivan Viola.
+											<a href="https://doi.org/10.48550/arXiv.2204.05762">Nanomatrix: Scalable Construction of Crowded Biological Environments</a>.
+											<em>IEEE Transactions on Visualization and Computer Graphics (TVCG), 2024.</em>
+											<span id="bibtex" onclick="$('#bibtex-text').slideToggle(500)"><strong>[BibTeX]</strong></span>
+										</p>
+										<code id="bibtex-text" style="display: none;">
+											@article{Nanomatrix,<br />author={Alharbi, Ruwayda and Strnad, Ondrej and Klein, Tobias and Viola, Ivan},<br />journal={IEEE Transactions on Visualization and Computer Graphics},<br />title={Nanomatrix: Scalable Construction of Crowded Biological Environments},<br />year={2024} <!--<br />volume={},<br />number={},<br />pages={1-1},<br />doi={10.48550/arXiv.2204.05762} -->
+											}
+										</code>
+										</p>
+									</footer>
+
+								</div>
+							</div>
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://github.com/nanovis" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/nanovis_group" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Nanovis</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
