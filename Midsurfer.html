@@ -1,0 +1,131 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nanovis Group</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Nanovis</a> - <a href="https://nanovis.kaust.edu.sa/"><span>KAUST Nanovisualization Research Group</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li>
+								<a href="index.html">Publications</a>
+							</li>
+							<li>
+								<a href="resources.html">Resources</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<h2><strong>MidSurfer: A Parameter-Free Approach for Mid-Surface Extraction from Segmented Volumetric Data</strong></h2>
+					</header>
+
+					<!-- Content -->
+						<section id="pub_1" class="wrapper style4 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<div class="image fit">
+										<img src="./images/midsurfer.png" />
+										<p class="fig-text"></p>
+									</div>
+								</div>
+							</div>
+							<div class="row gtr-50">
+								<div class="col-12 col-12-narrower">
+									<header>
+										<h2>Authors</h2>
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/eva-bones">Eva Boneš</a>, 
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/dawar-khan">Dawar Khan</a>, 	
+										<a href="https://www.fri.uni-lj.si/en/about-faculty/employees/ciril-bohak">Ciril Bohak</a>, 
+										<a href="https://www.ohsu.edu/people/benjamin-a-barad-phd">Benjamin A. Barad</a>, 
+										<a href="https://www.scripps.edu/faculty/grotjahn/">Danielle A. Grotjahn</a>, 
+										<a href="https://cemse.kaust.edu.sa/nanovis/people/person/ivan-viola">Ivan Viola</a>,
+										<a href="https://academia.kaust.edu.sa/en/persons/thomas-theussl">Thomas Theußl</a>
+									</header>
+									<h2></h2>
+
+									<h2>Description</h2>
+									<p>
+										In the field of volumetric data processing and analysis, extracting mid-surfaces from thinly bounded compartments is crucial for tasks such as surface 
+                                        area estimation and accurate modeling of biological structures, yet it has lacked a standardized approach. To bridge this gap, we introduce MidSurfer - a novel parameter-free method 
+                                        for extracting mid-surfaces from segmented volumetric data. Our method produces smooth, uniformly triangulated meshes that accurately capture the structural features of interest. 
+                                        The process begins with the Ridge Field Transformation step that transforms the segmented input data, followed by the Mid-Polyline Extraction Algorithm that works on 
+                                        individual volume slices. Based on the connectivity of components, this step can result in either single or multiple polyline segments that represent the structural features. 
+                                        These segments form a coherent series across the volume, creating a backbone of regularly distributed points on each slice that represents the mid-surface. 
+                                        Subsequently, we employ a Polyline Zipper Algorithm for triangulation that connects these polyline segments across neighboring slices, yielding a detailed 
+                                        triangulated mid-surface mesh. Our findings demonstrate that this method surpasses previous techniques in versatility, simplicity of use, and accuracy. 
+                                        Our approach is now publicly available as a plugin for ParaView, a widely-used multi-platform tool for data analysis and visualization, and can be found at 
+                                        <a href="https://github.com/kaust-vislab/MidSurfer">github.com/kaust-vislab/MidSurfer</a>.
+									</p>
+									<h2>Sources</h2>
+									<ul>
+										<li><a href="https://github.com/kaust-vislab/MidSurfer">Source Code</a></li>	
+										<li><a href="https://www.youtube.com/watch?v=aj_UzkKL0-s">Video</a></li>										
+									</ul>
+									<p>
+
+									</p>
+
+									<footer>
+										<h2>Publications</h2>
+										<p>
+											Eva Boneš, Dawar Khan, Ciril Bohak, Benjamin A. Barad, Danielle A. Grotjahn, Ivan Viola, Thomas Theußl									
+											<a href="https://arxiv.org/abs/2405.19339">MidSurfer: A Parameter-Free Approach for Mid-Surface Extraction from Segmented Volumetric Data</a>. 
+											<em>, arXiv preprint, 2024.</em>											
+											<span id="bibtex" onclick="$('#bibtex-text').slideToggle(500)"><strong>[BibTeX]</strong></span>
+										</p>
+										<code id="bibtex-text" style="display: none;">@article{bones2024midsurfer,<br />title        = {MidSurfer: A Parameter-Free Approach for Mid-Surface Extraction from Segmented Volumetric Data},<br />author       = {Bone\v{s}, Eva and Khan, Dawar and Bohak, Ciril and Barad, Benjamin A. and Grotjahn, Danielle A. and Viola, Ivan and Theu\ss{}l, Thomas},<br />year         = 2024,<br />doi          = {10.48550/arXiv.2405.19339},<br />eprint       = {2405.19339},<br />archiveprefix = {arXiv},<br />primaryclass = {cs.CG}<br />}</code>										 
+										</p>
+									</footer>
+
+								</div>
+							</div>
+						</section>
+
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://github.com/nanovis" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitter.com/nanovis_group" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Nanovis</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
