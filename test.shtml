@@ -1,6 +1,0 @@
-<html>
-<body>
-    <!--#echo var="DATE_LOCAL" -->
-    <p>If you see a date and time above, SSI is working!</p>
-</body>
-</html>
