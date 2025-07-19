@@ -22,7 +22,7 @@
 				<article id="main">
 
 					<header class="special container">
-						<h2><strong>LoXR: Performance Evaluation of Locally Executing LLMs on XR Devices</strong></h2>
+						<h2><strong>AIvaluateXR: An Evaluation Framework for on-Device AI in XR with Benchmarking Results</strong></h2>
 					</header>
 
 					<!-- Content -->
@@ -39,7 +39,7 @@
 								<div class="col-12 col-12-narrower">
 									<header>
 										<h2>Authors</h2>
-										<a href="https://cemse.kaust.edu.sa/profiles/dawar-khan">Dawar Khan</a>, 
+										<a href="dawarkhanuom.github.io">Dawar Khan</a>, 
 										<a href="https://nanovis.kaust.edu.sa/profiles">Xinyu Liu</a>,   	
 										<a href="https://cemse.kaust.edu.sa/profiles/omar-mena-facio">Omar Mena</a>, 
 										<a href="https://cemse.kaust.edu.sa/profiles/donggang-jia">Donggang Jia</a>, 
@@ -48,17 +48,25 @@
 									</header>
 									<h2></h2>
 
-									<h2>Description</h2>
+								 <h2>Description</h2>
 									<p>
-										The deployment of large language models (LLMs) on extended reality (XR) devices has great potential to advance the field of human-AI interaction. In case of direct, on-device model inference, selecting the appropriate model and device for specific tasks remains challenging. In this paper, we deploy 17 LLMs across four XR devices—Magic Leap 2, Meta Quest 3, Vivo X100s Pro, and Apple Vision Pro—and conduct a comprehensive evaluation. We devise an experimental setup and evaluate performance on four key metrics: performance consistency, processing speed, memory usage, and battery consumption. 
-For each of the 68 model-device pairs, we assess performance under varying string lengths, batch sizes, and thread counts, analyzing the tradeoffs for real-time XR applications. We finally propose a unified evaluation method based on the Pareto Optimality theory to select the optimal device-model pairs from the quality and speed objectives.  
-We believe our findings offer valuable insight to guide future optimization efforts for LLM deployment on XR devices. Our evaluation method can be followed as standard groundwork for further research and development in this emerging field. 
+									The deployment of large language models (LLMs) on extended reality (XR) devices has great potential to advance the field of human–AI interaction. However, selecting the appropriate model and device for specific tasks remains challenging when performing direct, on-device inference.
+
+									In this work, we present <strong>AIvaluateXR</strong>, a comprehensive evaluation framework for benchmarking LLMs running on XR devices. To demonstrate the framework, we deploy 17 selected LLMs across four XR platforms—Magic Leap 2, Meta Quest 3, Vivo X100s Pro, and Apple Vision Pro—and conduct an extensive evaluation. Our experimental setup measures four key metrics: performance consistency, processing speed, memory usage, and battery consumption.
+
+									For each of the 68 model–device pairs, we assess performance under varying string lengths, batch sizes, and thread counts, analyzing the tradeoffs for real-time XR applications. We also propose a unified evaluation method based on 3D Pareto Optimality to identify optimal device–model combinations based on quality and speed objectives.
+
+									Additionally, we compare the efficiency of on-device LLMs with client–server and cloud-based setups, and evaluate their accuracy on two interactive tasks.
+
+									We believe our findings offer valuable insights to guide future optimization efforts for LLM deployment on XR devices. Our evaluation method serves as standard groundwork for further research and development in this emerging field.
+
+									The source code and supplementary materials are available on the following links.
 									</p>
+
 									<h2>Sources</h2>
 									<ul>
 										<li><a href=" https://github.com/nanovis/AIvaluateXR" target="_blank">Source Code/Scripts </a></li>	
-										<li><a href="https://youtu.be/agnLlrpLZ1o" target="_blank">Video (4 mins)</a></li>	
-										<li><a href="https://youtu.be/LjjO9nvOpF4" target="_blank">Short Video (1 min)</a></li>		
+										<li><a href="https://youtu.be/agnLlrpLZ1o" target="_blank">Video Demo</a></li>	 
 										<li><a href="https://ieeexplore.ieee.org/abstract/document/10973004" target="_blank">Poster at IEEE VR 2025 </a></li>	
 										<li><a href="https://arxiv.org/abs/2502.15761" target="_blank">Paper (arXiv Preprint) </a></li>	
 										<li><a href="download/supplementary_AIvaluateXR.pdf" target="_blank">Supplementary Materials (PDF)</a></li>	
