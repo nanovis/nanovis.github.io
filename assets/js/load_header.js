@@ -8,7 +8,7 @@ fetch('header.html')
             $('#nav > ul').dropotron({ 
                 alignment: 'right',
                 mode: 'fade'
-            });
+            }); 
         }
     })
     .catch(error => console.error('Error loading header:', error));
