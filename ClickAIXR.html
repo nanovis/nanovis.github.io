@@ -1,0 +1,118 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>ClickAIXR</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="index is-preload">
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Main -->
+    <article id="main">
+
+        <header class="special container">
+            <h2><strong>ClickAIXR: On-Device Multimodal Vision-Language Interaction with Real-World Objects in Extended Reality</strong></h2>
+        </header>
+
+        <section class="wrapper style4 container special-alt">
+
+            <!-- Image -->
+            <div class="row gtr-50">
+                <div class="col-12">
+                    <div class="image fit">
+                        <img src="./images/clickxr.jpg" alt="ClickAIXR teaser"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Authors -->
+            <header>
+				
+				<h2>Authors</h2>
+<a href="https://dawarkhanuom.github.io/" target="_blank">Dawar Khan</a>, 
+<a href="https://cemse.kaust.edu.sa/profiles/alexandre-kouyoumdjian" target="_blank">Alexandre Kouyoumdjian</a>, 	 
+<a href="https://nanovis.kaust.edu.sa/profiles" target="_blank">Xinyu Liu</a>,   	
+<a href="https://cemse.kaust.edu.sa/profiles/omar-mena-facio" target="_blank">Omar Mena</a>, 
+<a href="https://dominikengel.com/" target="_blank">Dominik Engel</a>, 	
+<a href="https://cemse.kaust.edu.sa/profiles/ivan-viola" target="_blank">Ivan Viola</a>
+            </header>
+
+            <!-- Description -->
+          <h2>Description</h2>
+<p>
+ClickAIXR is a novel on-device framework for multimodal vision-language interaction with real-world objects in Extended Reality (XR).
+ 
+Unlike prior systems that rely on cloud-based AI or gaze-based selection, ClickAIXR integrates an on-device Vision-Language Model (VLM) with a controller-based object selection mechanism. This enables users to precisely select objects in XR and ask natural language questions, receiving responses through both text and speech.
+ 
+By performing all inference locally, ClickAIXR reduces latency, preserves privacy, and improves transparency. The object-centered interaction also reduces ambiguity compared to gaze- or voice-only interfaces.
+ 
+The system is implemented using the Magic Leap SDK (C API) with ONNX-based local VLM inference. A user study comparing ClickAIXR with Gemini 2.5 Flash and ChatGPT 5 shows moderate latency and a positive user experience.
+</p>
+
+            <!-- Sources -->
+            <h2>Sources</h2>
+            <ul>
+                <li><a href="https://github.com/nanovis/ClickAIXR" target="_blank">Source Code (coming soon)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Mgra0laoKTc" target="_blank">Video Demo</a></li>
+                <li><a href="https://arxiv.org/pdf/2604.04905" target="_blank">Paper (arXiv)</a></li>
+                <li><a href="https://www.nanovis.org/AI4XR.html" target="_blank">Main Project Page</a></li>
+            </ul>
+
+            <!-- Publications -->
+            <footer>
+                <h2>Publication</h2> 
+				<!-- Paper: ClickAIXR -->
+<p>
+  Dawar Khan, Alexandre Kouyoumdjian, Xinyu Liu, Omar Mena, Dominik Engel, Ivan Viola.<br />
+  <a href="https://arxiv.org/abs/2604.04905" target="_blank" rel="noopener noreferrer">
+    <strong>ClickAIXR: On-Device Multimodal Vision-Language Interaction with Real-World Objects in Extended Reality</strong>
+  </a><br />
+  <em>arXiv preprint, 2026.</em><br />
+  <span onclick="document.getElementById('bibtex-clickaixr').style.display = (document.getElementById('bibtex-clickaixr').style.display === 'none') ? 'block' : 'none';" style="cursor: pointer; color: #007bff;">
+    <strong>[BibTeX]</strong>
+  </span>
+</p>
+
+<pre id="bibtex-clickaixr" style="display: none; background-color: #f5f5f5; padding: 10px; border: 1px solid #ddd;">
+@article{khan2026clickaixr,
+  title        = {{ClickAIXR}: On-Device Multimodal Vision-Language Interaction with Real-World Objects in Extended Reality},
+  author       = {Khan, Dawar and Kouyoumdjian, Alexandre and Liu, Xinyu and Mena, Omar and Engel, Dominik and Viola, Ivan},
+  year         = {2026},
+  eprint       = {2604.04905},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  url          = {https://arxiv.org/abs/2604.04905}
+}
+</pre>
+            </footer>
+
+        </section>
+    </article>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="https://github.com/nanovis" class="icon brands circle fa-github"></a></li>
+            <li><a href="https://twitter.com/nanovis_group" class="icon brands circle fa-twitter"></a></li>
+        </ul>
+
+        <ul class="copyright">
+            <li>&copy; Nanovis</li>
+        </ul>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/load_header.js"></script>
+
+</body>
+</html>
